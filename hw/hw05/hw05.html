@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<hr>
+<head>
+    <meta charset="UTF-8">
+    <title> hw02_index.html </title>
+    <style>
+        .class1 {
+            color: black;
+            background-color: beige;
+            text-align: center;
+        }
+        .class2 {
+            text-align: center;
+        }
+        .class3 {
+            text-shadow: gray;
+            text-align: center;
+            background-color: burlywood;
+        }
+        li {text-align: center;
+            background-color: cornsilk;
+        }
+        a:link {color:black; text-decoration-line: underline;}
+        a:visited {color:brown}
+        a:hover {color:darkblue}
+    </style>
+</head>
+
+    <hr><h2 class="class1">WHO AM I?</h2>
+    <form action="01_getdata.jsp" method="GET">
+        <p class="class2">이름 : <input type="text" name="name" value="박채완" placeholder="박채완"</p>
+        <p class="class2">학과 : <input type="text" name="major" value="국제경영학과" placeholder="국제경영학과"</p>
+        <p class="class2">복수전공 : <input type="text" name="secondmajor" value="컴퓨터학과" placeholder="컴퓨터학과"</p>
+    </form>
+    </hr>
+    <hr>
+    <p><section>
+        <article>
+            <fieldset>
+            <h2 class="class1">간단한 인적사항</h2>
+            <a href="/hw/hw04/hw04.html">
+                <img src="/hw/hw02/img/me.jpg" width="400" height="400" alt="그림" 
+                title="이미지를 클릭해주시면 자기소개 페이지로 넘어갑니다!">
+                <img src="/hw/hw05/img/me3.jpg" width="400" height="400" alt="그림" 
+                title="이미지를 클릭해주시면 자기소개 페이지로 넘어갑니다!">
+                <img src="/hw/hw05/img/me4.jpg" width="400" height="400" alt="그림" 
+                title="이미지를 클릭해주시면 자기소개 페이지로 넘어갑니다!"></a>
+                <p class="class2">
+                    * 위 사진을 클릭하시면 다음 
+                    <a href="/hw/hw04/hw04.html"><b>자기소개</b></a> 페이지로 이동합니다! *</p>
+            <h3 class="class3"><div>학교 및 학과</div></h3>
+            <ul>
+                <li><a href="https://www.dongduk.ac.kr/kor/main.do"
+                    target="_blank"style="font-size: 100%">동덕여자대학교</a></li>
+                <li><a href="https://www.dongduk.ac.kr/kor/edu/intbsamin_1.do"
+                    target="_blank"style="font-size: 100%"> 국제경영학과</a></li>
+                <li><a href="https://www.dongduk.ac.kr/kor/edu/computersc_01.do" 
+                    target="_blank" style="font-size: 100%">복수전공 컴퓨터학과</a></li>
+            </ul>
+            <h3 class="class3">간단한 자기소개</h3>
+            <p class="class2"> 
+                제 자신에 대해서 조금 말해보자면 저는 약간 게으르지만 성실하려고 노력하는 사람입니다.
+                <br>순간 집중력은 좋은 편이지만 늘 꾸준함이 부족해 조금씩 부족한 면이 있습니다.
+                <br>하지만 좋아하는 것엔 늘 열심히 하므로 인터넷프로그래밍 수업에도 늘 열심히 하겠습니다:>
+            </p>
+            </fieldset>
+            <fieldset>
+                <h3 class="class1">방명록</h3>
+                <form class="class2">
+                    <textarea rows="10" cols="100" placeholder="당신의 발자취를 남겨주세요!"></textarea>
+                    <br>
+                    <input type="submit" value="작성 감사합니다!">
+                    <input type="reset" value="다시 작성하시겠어요?"
+                </form>
+                <form class="class2">
+                    <h3 class="class1">제 자기소개 페이지의 완성도를 평가해주세요!</h3>
+                    <input type="range" name="point" min="0" max="100">
+                    <br>
+                    <input type="submit" value="평가 감사합니다!">
+                    <input type="reset" value="다시 평가하시겠어요?">
+                </form>
+            </fieldset>
+        </article>
+    </section></p>
+    </hr>
+  
+    
+</body>
+
+</html>
+
