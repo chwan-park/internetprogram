@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>hw12_문제2</title>
+
+</head>
+
+<body>
+
+    <img src="img/h2.jpg"
+    onmouseenter="zoomIn(event)"
+    onmouseleave="zoomOut(event)">
+
+    <script>
+        function zoomIn(event) {
+          event.target.style.width = "700px";
+          event.target.style.height = "700px";
+          event.target.style.transition = "all 0.5s";
+        }
+    
+        function zoomOut(event) {
+          event.target.style.width = "300px";
+          event.target.style.height = "300px";
+          event.target.style.transition = "all 0.5s";
+        }
+      </script>
+
+</body>
+
+
+</html>
