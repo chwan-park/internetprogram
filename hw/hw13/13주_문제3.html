@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>13주 문제3</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#db").click(function() {
+                $("#Ddisney").slideToggle("fast")
+            })
+        })
+
+    </script>
+
+    <style>
+        #disney {
+            width: 150px;
+            height: 100px;
+        }
+        #Ddisney {
+            display: none;
+            width: 600px;
+            height: 500px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <img src="./img/disney.jpg" alt="princess" id="disney">
+    <p><button id="db">큰 이미지 보기/닫기</button></p>
+    <img src="./img/disney.jpg" alt="princess" id="Ddisney">
+
+</body>
+
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>13주 문제2</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#ball1").click(function() {
+                $("#img").html("<img src='./img/soccer.jpg'>");
+            });
+            $("#ball2").click(function() {
+                $("#img").html("<img src='./img/basketball.jpg'>")
+            });
+            $("#ball3").click(function() {
+                $("#img").html("<img src='./img/baseball.jpg'>")
+            });
+        })
+
+
+    </script>
+
+    <style>
+        
+        #img {
+            margin: 50px;
+        } 
+
+        button {
+            margin-right: 40px;
+            margin-left: 22px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>당신이 좋아하는 스포츠는?</h1>
+    <div id="button">
+        <button type="button" id="ball1">프로축구</button>
+        <button type="button" id="ball2">프로농구</button>
+        <button type="button" id="ball3">프로야구</button>
+    </div>
+    <div id="img"></div>
+
+
+
+
+
+
+</body>
+
+
+</html>

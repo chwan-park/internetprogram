@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>13주 문제1</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        var n1=0;
+        var n2=0;
+        var n3=0;
+
+        $(document).ready(function () {
+            $("div.box1").mousedown(function () {
+                $("p:first",this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수" + ++n1);
+            });
+        });
+
+        $(document).ready(function () {
+            $("div.box2").mousedown(function () {
+                $("p:first",this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수" + ++n2);
+            });
+        });
+
+        $(document).ready(function () {
+            $("div.box3").mousedown(function () {
+                $("p:first",this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수" + ++n3);
+            });
+        });
+
+    </script>
+
+    <style>
+
+        .box1 {
+            background-color: yellow;
+            width: 150px;
+            height: 100px;
+        }
+
+        .box2 {
+            background-color: skyblue;
+            width: 150px;
+            height: 100px;
+        }
+
+        .box3 {
+            background-color: cadetblue;
+            width: 150px;
+            height: 100px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box1">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+    <div class="box2">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+    <div class="box3">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+
+
+</body>
+
+
+</html>
